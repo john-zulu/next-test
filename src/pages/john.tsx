@@ -9,13 +9,15 @@ import {
 
 export default function John({ time }: any) {
     return (
-        <div>John - {time}
+        <>
+            <div>John - {time}
+            </div>
             <Alert status='error'>
                 <AlertIcon />
                 <AlertTitle>Your browser is outdated!</AlertTitle>
                 <AlertDescription>Your Chakra experience may be degraded.</AlertDescription>
             </Alert>
-        </div>
+        </>
     )
 }
 
