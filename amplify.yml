@@ -4,11 +4,11 @@ frontend:
     preBuild:
       commands:
         - rm -f PaxHeader
-        - yarn install --frozen-lockfile
+        - npm ci
     # IMPORTANT - Please verify your build command
     build:
       commands:
-        - yarn build
+        - npm run build
   artifacts:
     baseDirectory: .next
     files:
